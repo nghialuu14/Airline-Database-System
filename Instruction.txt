@@ -1,0 +1,26 @@
+Connect to the server (node index.js), then open index.html file, and choose a feature to use. 
+Instructions on how to use web app features are below:
+
++Bookings: 
+1. Enter all required information on the web client browser.
+2. 'Clear' button is used to reset all entered information. 'Book' is for booking a ticket with the given information.
+3. After clicking 'Book', the app prompts user to either get ticket code or book another flight. Ticket code is used to track or cancel a personal flight, the user should save it.
+
++Manage Trips:
+1. Enter all required information on the web client browser.
+2. If the user do not remember their ticket code, they can retrieve it using 'Forgot your ticket code?'. If click on that button, they will be asked to input first name, last
+name, and driver license ID.
+3. After entering all the required information, click 'Find your trip', a detailed list of information of their flight appears.
+4. They have the option to choose to find another trip.
+
++Flight Status:
+1. This feature is used for retrieving all flights with the given constraints.
+2. For example: if a user wants to look for all flights from Miami with departure date between 07/01/2021 and 09/10/2021. They can leave the 'Arrival' box empty.
+3. For example: if a user wants to look for all flights to Houston before 05/01/2021. They can leave the 'Departure' and 'From' box empty.
+4. A user can enter as many (up to 4) constraints as they want to retrieve all flights.
+
++Cancel Flights:
+1. Enter all required information on the web client browser.
+2. Click 'Find your trip' to show the information of your flight. If a user has made sure that it is their flight, click the button 'Cancel your flight'.
+3. A new window pops up saying your flight has been canceled. The user has the option to book another flight if they want.
+4. The user can check that their flight has been canceled by going to 'Manage Trips' tab and search for their flight, it will then say the flight is invalid.
