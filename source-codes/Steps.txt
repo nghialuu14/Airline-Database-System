@@ -1,0 +1,9 @@
+1. Connect to the web server:
+open booking.html by VS Code-> cd into your folder -> node index.js
+
+2. Input from web client:
+open booking.html by a browser -> input all the data for a customer booking -> click book
+
+3. Check the database in Elephant SQL:
+log into elephant SQL, go into Temp team instance, click on "BROWSER" on the left,
+type SELECT queries to see every tables (or relation) in the database.

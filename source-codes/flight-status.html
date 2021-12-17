@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="urf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> Flight Status</title>
+    </head>
+    <body>
+        <link rel="stylesheet" href="App.css">
+        <div class="header">
+        <h1 style="text-align:center;">
+            An Enterprise Airline Database System
+        </h1>
+        <div class="topnav">
+                <h2>
+                    <span class="active">Reservations/ Tickets/ Boarding</span>
+                </h2>
+                <h3 class="linksBMF">
+                    <a target="_top" href="manage-trips.html"> <</a>
+                    <a target="_top" href="index.html"> Home</a>
+                    <a target="_top" href="booking.html"> Booking</a>
+                    <a target="_top" href="manage-trips.html"> Manage Trips</a>
+                    <a target="_top" class="current" href="flight-status.html"> Flight Status</a>
+                    <a target="_top" href="cancel-flight.html"> Cancel Flight</a>
+                    <a target="_top" href="cancel-flight.html"> ></a>
+                </h3>
+                </div>
+            </div>         
+        </br>
+        <div class="single-column">
+            <h2> Search for flights</h2>
+            <div id="aa-hp-flightStatus" class="is-hidden ui-tabs-panel ui-widget-content ui-corner-bottom" aria-labelledby="jq-flightStatus" role="tabpanel" aria-expanded="true" aria-hidden="false" style="display:block;">
+                <form id="flightStatusView" novalidate="novalidate" action="/travelInformation/flight/status" method="POST" autocomplete="false">
+                    <div class="row-form section">
+                        <div class="span4 citySection">
+                            <div class="position-relative">
+                                <label>
+                                    Departure <br>
+                                    <input id="Departure" placeholder="City or airport" type="text" value size ="16" maxlength="30">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="span4 citySection">
+                            <div class="position-relative">
+                                <label>
+                                    <br>Arrival<br>
+                                    <input id="Arrival" placeholder="City or airport" type="text" value size ="19" maxlength="30">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="span4 />">
+                            <div class="position-relative">
+                                <label>
+                                    <br>From<br>
+                                    <input type="date" id="datestart" placeholder="mm/dd/yyyy" value size ="20" type="text" maxlength="10">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="span4 />">
+                            <div class="position-relative">
+                                <label>
+                                    <br>To<br>
+                                    <input type="date" id="dateend" placeholder="mm/dd/yyyy" value size ="22" type="text" maxlength="10">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div class="row-form">
+                    <div class="span4 offset8 submitBtn">
+                        <form>
+                                <br>
+                                <script type="application/javascript" src="main.js"> </script>
+                                <button type="button" onclick="seachFlights()"> Search</button>
+                                <div id="searchflights"></div>
+                                <br>
+                                <br>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="urf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> Manage Trips</title>
+    </head>
+    <body>
+        <style>
+            .span4 {
+                text-align: center;
+            }
+        </style>
+        <link rel="stylesheet" href="App.css">
+        <div class="manage-page">
+            <h1 style="text-align:center;">
+                An Enterprise Airline Database System
+            </h1>
+            <div class="topnav">
+                <h2>
+                    <span class="active">Reservations/ Tickets/ Boarding</span>
+                </h2>
+                <h3 class="linksBMF">
+                    <
+                    <a target="_top" href="index.html"> Home</a>
+                    <a target="_top" href="booking.html"> Booking</a>
+                    <a target="_top" href="manage-trips.html"> Manage Trips</a>
+                    <a target="_top" href="flight-status.html"> Flight Status</a>
+                    <a target="_top" href="cancel-flight.html"> Cancel Flight</a>
+                    >
+                </h3>
+            </div>
+        </div>
+        </br>
+            <div id="aa-viewReservations" class="is-hidden ui-tabs-pannel ui-widget-content ui-corner-bottom" aria-labelledby="jq-myTripsCheckIn" role="tabpanel" aria-expanded="true" aria-hidden="false">
+                <form>
+                    <div id="aa-viewReservationUnsecure">
+                        <div class="row-form">
+                            <div class="single-column">
+                            <div class="span4">
+                                <h2 style="text-align:center;"> Retrieve your ticket code</h2>
+                                <br>
+                                <label>
+                                    Passenger First Name
+                                    <input type="text" name="firstName" maxlength="30" value id="firstName" placeholder="First name">
+                                </label>
+                            <div class="span4">
+                                <label>
+                                    <br>Passenger Last Name
+                                    <input type="text" name="lastName" maxlength="30" value id="lastName" placeholder="Last name">
+                                </label>
+                            </div>
+
+                        <div class="row-form">
+                            <div class="span4">
+                                <div class="tooltip-container">
+                                    <label>
+                                        <br> Driver License ID
+                                        <input type="text" value id="customerID" class="aaAutoComplete ui-autocomplete-input" 
+                                        placeholder="Enter your ID" autocomplete="off" autocorrect="off" maxlength="8" required>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    <div class="row-form" style="text-align:center">
+                        <div class="span4 offset8 submitBtn">
+                                    <br>
+                                    <!--<input type="submit" value="Find your trip">
+                                    <button class="span4_offset8_submitBtn" type="submit">-->
+                                    <script type="application/javascript" src="main.js"> </script>
+                                    <button style="width:250px;" class="btn btn-primary"  type="Button" onclick="trackTicketCode()"> Track your ticket code </button>
+                                    <div id="trackTicketCode">
+                                    <br>
+                                    <a href="manage-trips.html">Go back</a>
+                                    </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+                </form>
+            </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,16 @@
+booking: add booking_id as PK references to payment_info(payment_id), 
+customer_id references to customer (customer_id), not the other way,
+remove credit_card_no as FR
+
+boarding_pass: add customer_id references to customer(customer_id), 
+add flight_id references to flight(flight_id)
+
+flight: make flight_id as primary key, add departure date and return date
+
+aircraft: aircraft_code is not a foreign key to seat_class(aircraft_code)
+also, aircraft_code is not a foreign key to flight(aircraft_code), 
+change aircraft_name to model
+
+payment_info: add payment_id as PK,
+remove first name and last name, change to full name, add CVV and Date Expiration Date, 
+add amount

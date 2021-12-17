@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <meta charset="urf-8">
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+        <style>
+            .hidden-accessible{
+                border: 50;
+                clip: rect(0,0,0,0);
+                height: 1px;
+                margin: 0px;
+                overflow: hidden;
+                padding: 0;
+                position: absolute;
+                width: 1px;
+            }
+        </style>
+        <title> Booking</title>
+    </head>
+    <body>
+        <link rel="stylesheet" href="App.css">
+        <div class="header">
+        <h1 style="text-align:center;" >
+            An Enterprise Airline Database System
+        </h1>
+        <div class="topnav">
+                <h2>
+                    <span class="active">Reservations/ Tickets/ Boarding</span>
+                </h2>
+                <h3 class="linksBMF">
+                    <a target="_top" href="index.html"> <</a>
+                    <a target="_top" href="index.html"> Home</a>
+                    <a target="_top" class="current" href="booking.html"> Booking</a>
+                    <a target="_top" href="manage-trips.html"> Manage Trips</a>
+                    <a target="_top" href="flight-status.html"> Flight Status</a>
+                    <a target="_top" href="cancel-flight.html"> Cancel Flight</a>
+                    <a target="_top" href="manage-trips.html"> ></a>
+                </h3>
+        </div>
+        </div>
+        </br>
+        <div class="row">
+        <div class="column">
+        <form action="thankyou.html" target="_blank">
+            <div id="aa-booking-module" class="ui-tabs-pannel ui-widget-content ui-corner-bottom" aria-labelledby="jq-findFlights" role="tab panel" aria-expanded="true" aria-hidden="false" style="display: block;">
+                    <h2> Personal Information </h2>
+                    <div class="span4">
+                        <div class="position-relative margin-bottom">
+                            <label>
+                                Passenger First Name <br>
+                                <input type="text" value id="passengerFirstName" class="aaAutoComplete ui-autocomplete-input" 
+                                placeholder="First name" autocomplete="off" autocorrect="off" maxlength="30" required>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="span4">
+                        <div class="position-relative margin-bottom">
+                            <label>
+                                <br> Passenger Last Name <br>
+                                <input type="text" value id="passengerLastName" class="aaAutoComplete ui-autocomplete-input" 
+                                placeholder="Last name" autocomplete="off" autocorrect="off" maxlength="30" required>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="span4">
+                        <div class="position-relative margin-bottom">
+                            <label>
+                                <br> Driver License ID <br>
+                                <input type="text" value id="customerID" pattern="\d*" maxlength="8" placeholder="Enter your ID" required>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                    <h2> Flight information </h2>
+                    <div class="span4">
+                        <div class="position-relative margin-bottom">
+                            <label for="reservationFlightSearchForm.originAirport">
+                                From <br>
+                                <input type="text" value id="departureAirport" class="aaAutoComplete ui-autocomplete-input" 
+                                placeholder="City or airport" autocomplete="off" autocorrect="off" maxlength="30" required>
+                                
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="span4">
+                        <div class="position-relative margin-bottom">
+                            <label>
+                                <br>To<br>
+                                <span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span>
+                                <input type="text" value id="destinationAirport" class="aaAutoComplete ui-autocomplete-input" 
+                                placeholder="City or airport" autocomplete="off" autocorrect="off" maxlength="30" required>
+                            </label>
+                        </div>
+                    </div>
+                <div class="row-form aa-flightSearchForm-datesRow">
+                <div class="span4">
+                    <div class="js-date-picker-wrapper position-relative">
+                        <label for="aa-leavingOn">
+                            <br> Departure Date <br>
+                            <input class="aaDatePicker hasDatepicker" id="aa-leavingOn" name="departDate" type="date" value placeholder="mm/dd/yyyy" maxlength="10" required>
+                        </label>
+                        <buttton type="button" class="ui-datepicker-trigger">
+                        </buttton>
+                    </div>
+                </div>
+                
+                <div class="span4">
+                    <div class="js-date-picker-wrapper position-relative">
+                        <label for="aa-returningFrom">
+                            <br>Return Date <br>
+                            <input class="aaDatePicker has Datepicker" id="aa-returningFrom" name="returnDate" type="date" value placeholder="mm/dd/yyy" maxlength="10" required>
+                        </label>
+                        
+                    </div>
+                </div>
+
+                
+                <div class="span4">
+                    <div class="margin-bottom">
+                        <label>
+                            <br>Fare Class <br>
+                            <select id="fareClass">
+                                <option value="Economy"> Economy</option>
+                                <option value="Business"> Business</option>
+                                <option value="First Class"> First Class</option>
+                            </select>
+                            <br>
+                            <br>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="column">
+                <h2> Payment information </h2>
+                <div class="span4">
+                    <div class="js-date-picker-wrapper position-relative">
+                        <label for="aa-returningFrom">
+                            Credit Card Number <br>
+                            <input id="creditCardNo" type="text" pattern="\d*" maxlength="16" value placeholder="Enter card number">
+                        </label>
+
+                        <label for="aa-returningFrom">
+                            <br> <br> Card Holder's Name <br>
+                            <input id="fullName" type="text" value placeholder="Enter your full name" maxlength="60" required>
+                        </label>
+
+                        <label for="aa-returningFrom">
+                            <br> <br> CVV <br>
+                            <input id="CVV" type="text" pattern="\d*" maxlength="3" value placeholder="Card Verification Value">
+                        </label>
+                        
+                        <label for="aa-returningFrom">
+                            <br> <br> Date Expiration <br>
+                            <input id="dateEXP" type="date" value placeholder="mm/dd/yyyy" maxlength="10" required>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="span4">
+                    <label for="fhServiceClass" class="aa-display-none" style="display: none;"></label>
+                </div>
+                
+                <div id="flightSearchFromSubmitButton" class="span4">
+                    <div>
+                        <br>
+                        <!--<input type="number" class="form-control" placeholder="primary key" id ="demo-key">
+                        <input type="text" class="form-control" placeholder="description"  id="demo-description">-->
+                        <!--<input id="flightSearchForm.button.reSubmit" class="btn btn-fullWidth">-->
+                        <!--<button onclick="bookingAFlight()" id="flightSearchForm.button.vacationSubmit" data-link="aavInterimMessage" type="submit" class="btn btn-fullWidth is-hidden">-->
+                        <script type="application/javascript" src="main.js"> </script>
+                        <div class="btn-group">
+                        <button class="btn btn-primary"  onclick="bookingAFlight()"> Book </button> 
+                        <button type="reset" value="Clear">Clear</button>
+                        </div>
+                    </div>
+                </div>    
+            </div>   
+        </form>
+        </div>
+    </body>
+</html>

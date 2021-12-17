@@ -1,0 +1,183 @@
+.header {
+  background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url("https://www.rd.com/wp-content/uploads/2020/01/GettyImages-1131335393-e1580493890249-scaled.jpg?resize=1536,1025");
+  background-position: center;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  height:100%;
+  width: 100%;
+  position: relative;
+  text-align:center;
+  display:inline-block;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  color: rgb(0, 0, 0);
+  /* text-align: center; */
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: rgb(255, 255, 255);
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #ffffff;
+  color: white;
+}
+
+.topnav a.current {
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.linksBMF{
+  font-size: add_size;
+}
+
+
+.span4_offset8_submitBtn{
+  display: none;
+}
+.background-image{
+  width: 50%;
+
+}
+.manage-page{
+  background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url(./airplane-silhouette.jpg);
+  background-position: center;
+  background-size: 100%;
+}
+
+.row {
+  display: flex;
+  padding-left: 20%;
+}
+
+.column {
+  border-left: solid white;
+  border-right: solid white;
+  background-color: rgb(221, 238, 253);
+  border-width: 5px;
+  padding: 30px;
+  float: left;
+  width: 20%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.single-column {
+  border-left: solid whitesmoke;
+  border-right: solid whitesmoke;
+  background-color: rgb(221, 238, 253);
+  border-width: 5px;
+  text-align: center;
+  float: left;
+  width: 20%;
+  margin-left: 36%;
+  padding: 30px;
+}
+
+html,body { 
+  padding:0;
+  margin:0;
+  width:100%;
+  height:100%; 
+  background-size: cover;
+  background: linear-gradient(rgba(255,255,255,.9), rgba(255,255,255,.3)), url("https://cdn.vox-cdn.com/thumbor/KBg_j6ZhxwmCd6uH8z6jr79GvXk=/0x0:1004x753/1820x1213/filters:focal(422x296:582x456):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/63710251/20150428-cloud-computing.0.1489222360.0.jpg") no-repeat ;
+}
+.aboutUs:hover{
+  color: blue;
+}
+.instruction:hover{
+  color: blue;
+}
+.query:hover{
+  color: blue;
+}
+.transaction:hover{
+  color: blue;
+}
+button {
+  border: none;
+  outline: none;
+  width: 45%;
+  padding: 15px 0;
+  color: #fff;
+  font-size: 16px;
+  letter-spacing: 1px;
+  background: #072361;
+  cursor: pointer;
+}
+
+.btn_group button {
+  float: left;
+}
+
+.row input {
+  width: 80%;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  padding: 10px;
+  background: rgba(8, 5, 5, 0.1);
+  color: rgb(0, 0, 0);
+  letter-spacing: 1px;
+}
+
+.row  input::placeholder {
+  color: #6d6d6d;
+  display: block;
+  font-size: 15px;
+  line-height: 1;
+  text-align: center;
+}
+
+.single-column input {
+  width: 80%;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  padding: 10px;
+  background: rgba(8, 5, 5, 0.1);
+  color: rgb(0, 0, 0);
+  letter-spacing: 1px;
+}
+
+.single-column input::placeholder {
+  color: #6d6d6d;
+  display: block;
+  font-size: 15px;
+  line-height: 1;
+  text-align: center;
+}
+
+select {
+  margin: 0;
+  width: 90%;
+  padding: 5px 35px 5px 5px;
+  font-size: 15px;
+  border: none;
+  height: 35px;
+  color: #000000;
+  background: rgba(8, 5, 5, 0.15);
+}
+
+a {
+  color:#072361;
+}
+
+input {
+  text-align: center;
+}
